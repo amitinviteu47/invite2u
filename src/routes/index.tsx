@@ -8,28 +8,28 @@ export const Route = createFileRoute('/')({
 const AUDIO_SRC =
   'https://www.dropbox.com/scl/fi/odoaftp7lnci979b25969/ReelAudio-14813.mp3?rlkey=tk7qj7f4kb26ge8vf45ofbaiu&st=zsdz1q64&dl=1'
 
-const WEDDING_DATE = new Date('2026-04-29T00:00:00')
+const WEDDING_DATE = new Date('2026-07-06T00:00:00')
 
 const EVENTS = [
-  { name: 'Mehndi', date: '28 April', icon: '🌿', desc: 'Henna & florals' },
-  { name: 'Haldi', date: '28 April', icon: '🌼', desc: 'Marigold blessings' },
-  { name: 'Jal Lepan', date: '28 April', icon: '💧', desc: 'Sacred cleansing' },
+  { name: 'Mehndi', date: '5 June', icon: '🌿', desc: 'Henna & florals' },
+  { name: 'Haldi', date: '5 June', icon: '🌼', desc: 'Marigold blessings' },
+  { name: 'Jal Nimantran', date: '5 June', icon: '💧', desc: 'Sacred cleansing' },
   {
     name: 'Satyanarayan Katha',
-    date: '29 April',
+    date: '6 June',
     icon: '🪔',
     desc: 'Divine prayers',
   },
   {
     name: 'Ghritdhari',
-    date: '29 April',
+    date: '6 June',
     icon: '🔥',
     desc: 'Sacred fire ritual',
   },
-  { name: 'Varmala', date: '29 April', icon: '💐', desc: 'Garland exchange' },
+  { name: 'Varmala', date: '6 June', icon: '💐', desc: 'Garland exchange' },
   {
     name: 'Wedding Night',
-    date: '29 April',
+    date: '6 June',
     icon: '💍',
     desc: 'Union of souls',
   },
@@ -243,7 +243,7 @@ export default function WeddingInvitation() {
                 </div>
               ))}
             </div>
-            <p className="countdown-date">29 April 2026</p>
+            <p className="countdown-date">6 June 2026</p>
           </div>
         </section>
 
@@ -361,7 +361,7 @@ export default function WeddingInvitation() {
             <div className="floral-border" aria-hidden="true">
               ✿ ❀ ✿ ❀ ✿ ❀ ✿ ❀ ✿
             </div>
-            <p className="closing-date">29 April 2026</p>
+            <p className="closing-date">6 June 2026</p>
           </div>
         </section>
       </main>
