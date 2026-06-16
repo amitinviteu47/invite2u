@@ -8,11 +8,11 @@ export const Route = createFileRoute('/')({
 const AUDIO_SRC =
   'https://www.dropbox.com/scl/fi/odoaftp7lnci979b25969/ReelAudio-14813.mp3?rlkey=tk7qj7f4kb26ge8vf45ofbaiu&st=zsdz1q64&dl=1'
 
-const WEDDING_DATE = new Date('2026-07-06T00:00:00')
+const WEDDING_DATE = new Date('2026-07-06T23:00:00')
 
 const EVENTS = [
+  { name: 'Haldi', date: '5 July', icon: '🌼', desc: 'Marigold blessings ' },
   { name: 'Mehndi', date: '5 July', icon: '🌿', desc: 'Henna & florals' },
-  { name: 'Haldi', date: '5 July', icon: '🌼', desc: 'Marigold blessings' },
   { name: 'Jal Nimantran', date: '5 July', icon: '💧', desc: 'Sacred cleansing' },
   {
     name: 'Satyanarayan Katha',
@@ -26,7 +26,7 @@ const EVENTS = [
     icon: '🔥',
     desc: 'Sacred fire ritual',
   },
-  { name: 'Varmala', date: '6 June', icon: '💐', desc: 'Garland exchange' },
+  { name: 'Varmala', date: '6 July', icon: '💐', desc: 'Garland exchange' },
   {
     name: 'Wedding Night',
     date: '6 July',
