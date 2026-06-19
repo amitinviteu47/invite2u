@@ -8,30 +8,31 @@ export const Route = createFileRoute('/')({
 const AUDIO_SRC =
   'https://www.dropbox.com/scl/fi/odoaftp7lnci979b25969/ReelAudio-14813.mp3?rlkey=tk7qj7f4kb26ge8vf45ofbaiu&st=zsdz1q64&dl=1'
 
-const WEDDING_DATE = new Date('2026-06-19T17:55:00')
+const WEDDING_DATE = new Date('2026-07-06T23:00:00')
 
 const EVENTS = [
-  { name: 'Haldi', date: '5 July', icon: '🌼', desc: 'Marigold blessings ' },
-  { name: 'Mehndi', date: '5 July', icon: '🌿', desc: 'Henna & florals' },
-  { name: 'Jal Nimantran', date: '5 July', icon: '💧', desc: 'Sacred cleansing' },
+  { name: 'हल्दी', date: '5 July', icon: '🌼', desc: 'Marigold blessings ' },
+  { name: 'मेहदी', date: '5 July', icon: '🌿', desc: 'Henna & florals' },
+  { name: 'जल निमंत्रण', date: '5 July', icon: '💧', desc: 'Jal Ceremony' },
   {
-    name: 'Satyanarayan Katha',
+    name: 'सत्यनारायण कथा',
     date: '6 July',
     icon: '🪔',
     desc: 'Divine prayers',
   },
   {
-    name: 'Ghritdhari',
+    name: 'घृतढारी',
     date: '6 July',
     icon: '🔥',
     desc: 'Sacred fire ritual',
   },
-  { name: 'Varmala', date: '6 July', icon: '💐', desc: 'Garland exchange' },
+  {name: 'बारात स्वागत', date: '6 July', icon: '💐', desc: 'welcome' },
+  
   {
-    name: 'Wedding Night',
+    name: 'वरमाला',
     date: '6 July',
     icon: '💍',
-    desc: 'Union of souls',
+    desc: 'Garland exchange',
   },
 ]
 
