@@ -64,14 +64,18 @@ function useCountdown(target: Date) {
   const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
   useEffect(() => {
     function tick() {
-      // 1. Calculate the raw difference (can be negative if the date has passed)
-      const rawDiff = target.getTime() - Date.now()
+     const targetTime = target.getTime()
+      const currentTime = Date.now()
       
-      // 2. Use Math.abs() so it always calculates a positive duration,
-      // whether counting down to the wedding or counting up after it.
-      const diff = Math.abs(rawDiff)
+      // Calculate absolute difference in milliseconds
+      const diff = Math.abs(targetTime - currentTime)
 
-      // REMOVED: The check for `if (diff <= 0)` is removed so it never freezes at 0.
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24))
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000)
+
+      setTime({ days, hours, minutes, seconds })
     }
     tick()
     const id = setInterval(tick, 1000)
