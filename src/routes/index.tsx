@@ -8,7 +8,7 @@ export const Route = createFileRoute('/')({
 const AUDIO_SRC =
   'https://www.dropbox.com/scl/fi/odoaftp7lnci979b25969/ReelAudio-14813.mp3?rlkey=tk7qj7f4kb26ge8vf45ofbaiu&st=zsdz1q64&dl=1'
 
-const WEDDING_DATE = new Date('2026-07-06T23:00:00')
+const WEDDING_DATE = new Date('2026-06-19T17:55:00')
 
 const EVENTS = [
   { name: 'Haldi', date: '5 July', icon: '🌼', desc: 'Marigold blessings ' },
@@ -64,17 +64,14 @@ function useCountdown(target: Date) {
   const [time, setTime] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
   useEffect(() => {
     function tick() {
-      const diff = target.getTime() - Date.now()
-      if (diff <= 0) {
-        setTime({ days: 0, hours: 0, minutes: 0, seconds: 0 })
-        return
-      }
-      setTime({
-        days: Math.floor(diff / 86400000),
-        hours: Math.floor((diff % 86400000) / 3600000),
-        minutes: Math.floor((diff % 3600000) / 60000),
-        seconds: Math.floor((diff % 60000) / 1000),
-      })
+      // 1. Calculate the raw difference (can be negative if the date has passed)
+      const rawDiff = target.getTime() - Date.now()
+      
+      // 2. Use Math.abs() so it always calculates a positive duration,
+      // whether counting down to the wedding or counting up after it.
+      const diff = Math.abs(rawDiff)
+
+      // REMOVED: The check for `if (diff <= 0)` is removed so it never freezes at 0.
     }
     tick()
     const id = setInterval(tick, 1000)
