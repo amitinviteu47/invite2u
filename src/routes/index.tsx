@@ -31,7 +31,7 @@ const EVENTS = [
   {
     name: 'वरमाला',
     date: '6 July',
-    icon: '💍',
+    icon: '📿',
     desc: 'Garland exchange',
   },
 ]
@@ -328,7 +328,7 @@ export default function WeddingInvitation() {
                   <span>Call</span>
                 </a>
                 <a
-                  href="https://wa.me/917645069609?text=Hi%20Amit%2C%20I'm%20a%20guest%20for%20the%20wedding%20on%20April%2029%20and%20had%20a%20quick%20question."
+                  href="https://wa.me/917645069609?text=Hi%20Amit%2C%20I'm%20a%20guest%20for%20the%20wedding%20on%20July%2006%20and%20had%20a%20quick%20question."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-btn btn-whatsapp"
